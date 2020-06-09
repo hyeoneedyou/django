@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>시 추천 서비스</title>
+        <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+  <h1 class="display-4">시 추천 서비스</h1>
+  <p class="lead">오늘에 어울리는 시는? 계절과 날씨에 맞는 시를 추천해드려요.</p>
+  <hr class="my-4">
+  <p>현재 계절은?</p>
+  <a button type="button" class="btn btn-outline-success" href='{% url "spring:weather" %}'>봄</a>
+        <a type="button" class="btn btn-outline-primary" href='{% url "summer:weather" %}'>여름</a>
+        <a button type="button" class="btn btn-outline-danger" href='{% url "fall:weather" %}'>가을</a>
+        <a button type="button" class="btn btn-outline-dark" href='{% url "winter:weather" %}'>겨울</a>
+</div>
+      
